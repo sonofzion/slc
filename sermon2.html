@@ -199,15 +199,15 @@
 		<div class="event-filter-warp">
 			<div class="row">
 				<div class="col-xl-3">
-					<p>Showing all messages </p>
+					
 				</div>
 				<div class="col-xl-9">
-					<form class="event-filter-form">
+					<!-- <form class="event-filter-form" >
 						<div class="ef-item">
-							<input type="text" placeholder="Event Date" class="message-date">
+							<input type="text" placeholder="Date" class="message-date">
 							<i class="material-icons">event_available</i>
 						</div>
-						<div class="ef-item">
+						<div class="ef-item" id="search-field">
 							<input type="text" placeholder="Search">
 							<i class="material-icons">search</i>
 						</div>
@@ -216,20 +216,34 @@
 							<i class="material-icons">map</i>
 						</div>
 						<button class="site-btn sb-gradient">Find message</button>
-					</form>
+					</form> -->
+					
+       
+						
+					<div class="ef-item">
+						<input type="text" id="search-box" class="search-box" placeholder="search message here..." required>
+						<i class="material-icons">search</i>
+						<button onclick="searchPart();" class="search-btn site-btn sb-gradient">Search Part</button>
+					</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
 
+
 	<!-- Events Section -->
 	<section class="events-page-section spad">
-		<div class="container">
+		<p id="record"></p>
+		<button onclick="goBack()" id="back-btn" class="site-btn sb-gradient" style="display: none;">Back to Page</button>
+		<div id="found"></div>
+		<div class="container" id="Msg-cont">
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="event-item">
 						<div class="ei-img">
+	
 							<img src="img/event/1.jpg" alt="">
 						</div>
 						<div class="ei-text">
@@ -659,6 +673,7 @@
 	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="./js/function.js"></script>
 
 	</body>
 </html>
