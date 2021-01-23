@@ -17,6 +17,7 @@
             @include transform(translateX(0%));
         }
     }
+    
 }
 .infor-model {
     margin-left: auto;
@@ -36,6 +37,7 @@
     }
     @media #{$small_mobile} {
         padding: 70px 20px 20px;
+        
     }
     
 }
