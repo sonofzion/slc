@@ -4158,3 +4158,8 @@ only screen and (min-width: 576px) and (max-width: 767px),
     box-sizing: border-box;
 
 }
+
+#devee{
+	float: right;
+	margin-right:50px;
+}
