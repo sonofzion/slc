@@ -4160,6 +4160,17 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 #devee{
-	float: right;
-	margin-right:50px;
+	
+	margin:0 50px 50px 50px;
+}
+
+@media (max-width: 576px) {
+	.ites {
+		display: flex;
+		flex-direction: row;
+	}
+
+	h4 {
+		font-size: 18px;
+	}
 }
