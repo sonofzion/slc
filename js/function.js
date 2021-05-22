@@ -38,7 +38,9 @@ function goBack(){
 }
   // declaring the search function for part matches
   function searchPart(){
+      
     searchInput = document.getElementById("search-box").value.toLowerCase();
+    
     sermons = originalSermons.filter(x=>x.title.toLowerCase().includes(searchInput));
     // conditional ternary operator
 
